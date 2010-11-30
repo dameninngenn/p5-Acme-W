@@ -1,0 +1,17 @@
+NAME
+    Acme::W -
+
+SYNOPSIS
+      use Acme::W;
+
+DESCRIPTION
+    Acme::W is
+
+AUTHOR
+    Takashi Higashigata <dameo@cpan.org>
+
+SEE ALSO
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
