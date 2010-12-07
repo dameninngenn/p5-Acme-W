@@ -1,9 +1,6 @@
 use inc::Module::Install;
 name 'Acme-W';
 all_from 'lib/Acme/W.pm';
-readme_from 'lib/Acme/W.pm';
-readme_pod_from 'lib/Acme/W.pm';
-githubmeta;
 
 requires 'Filter::Simple';
 
