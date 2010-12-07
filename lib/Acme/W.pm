@@ -259,15 +259,18 @@ FILTER_ONLY code_no_comments => sub {
     s/([^\$\w\d])q([^\w\d])/$1W$2/g;
     s/([^\$\w\d])m([^\w\d])/$1w$2/g;
 }, all => sub {
-    open FH, "+<$0" or print "Can't rewrite '$0'\n";
-    my @org = <FH>;
-    seek FH,0,0;
-    print FH "use Acme::W;\n$_";
-    print FH "\n=pod\n";
-    print FH "# orignal code\n\n";
-    print FH @org;
-    print FH "\n=cut\n";
-    close FH;
+    unless ($_ =~ /This file rewrote by Acme::W/) {
+        open FH, "+<$0" or print "Can't rewrite '$0'\n";
+        my @org = <FH>;
+        seek FH,0,0;
+        print FH "use Acme::W;\n$_";
+        print FH "\n=pod\n";
+        print FH "# This file rewrote by Acme::W version $VERSION.\n";
+        print FH "# The following codes are original codes.\n\n";
+        print FH @org;
+        print FH "\n=cut\n";
+        close FH;
+    }
 }, code_no_comments => sub {
     s/([^\$\w\d])WWWWWWw([^\w\d])/$1getprotobynumber$2/g;
     s/([^\$\w\d])WWWWWwW([^\w\d])/$1getprotobyname$2/g;
