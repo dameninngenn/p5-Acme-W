@@ -5,13 +5,12 @@ readme_from 'lib/Acme/W.pm';
 readme_pod_from 'lib/Acme/W.pm';
 githubmeta;
 
-# requires '';
+requires 'Filter::Simple';
 
 tests 't/*.t';
 author_tests 'xt';
 
 build_requires 'Test::More';
-build_requires 'Filter::Simple';
 auto_set_repository;
 auto_include;
 WriteAll;
