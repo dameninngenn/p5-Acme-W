@@ -1,17 +1,28 @@
-NAME
-    Acme::W -
+This is Perl module Acme::W
 
-SYNOPSIS
-      use Acme::W;
+INSTALLATION
 
-DESCRIPTION
-    Acme::W is
+Acme::W installation is straightforward. If your CPAN shell is set up,
+you should just be able to do
 
-AUTHOR
-    Takashi Higashigata <dameo@cpan.org>
+    % cpan Acme::W
 
-SEE ALSO
-LICENSE
-    This library is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself.
+Download it, unpack it, then build it as per the usual:
+
+    % perl Makefile.PL
+    % make && make test
+
+Then install it:
+
+    % make install
+
+DOCUMENTATION
+
+Acme::W documentation is available as in POD. So you can do:
+
+    % perldoc Acme::W
+
+to read the documentation online with your favorite pager.
+
+dameninngenn
 
