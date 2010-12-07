@@ -532,21 +532,50 @@ __END__
 
 =head1 NAME
 
-Acme::W -
+Acme::W - Enjoy programing with planting grass!
 
 =head1 SYNOPSIS
 
   use Acme::W;
 
+  print 'wwwwwwwwwwwwwwwwww';
+
 =head1 DESCRIPTION
 
-Acme::W is
+Acme::W enables programing with planting grass.
+For example when you execute the following code,displayed "Hello World".
+
+  use Acme::W;
+
+  print "Hello World\n";
+
+And the executed code is rewrote.
+
+  use Acme::W;
+  
+  WWwwWW "Hello World\n";
+  
+  
+  =pod
+  # This file rewrote by Acme::W version 0.01.
+  # The following codes are original codes.
+  
+  use Acme::W;
+  
+  print "Hello World\n";
+  
+  
+  =cut
+
+In addition,you execute rewrote code,to similar displayed "Hello World". 
 
 =head1 AUTHOR
 
-Takashi Higashigata E<lt>dameo@cpan.orgE<gt>
+Takashi Higashigata (a.k.a. dameninngenn) E<lt>dameo at cpan.orgE<gt>
 
 =head1 SEE ALSO
+
+C<Acme::Bleach>
 
 =head1 LICENSE
 
