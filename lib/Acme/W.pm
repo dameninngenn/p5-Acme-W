@@ -571,7 +571,7 @@ In addition,you execute rewrote code,to similar displayed "Hello World".
 
 =head1 AUTHOR
 
-Takashi Higashigata (a.k.a. dameninngenn) E<lt>dameo at cpan.orgE<gt>
+Takashi Higashigata E<lt>dameo at cpan.orgE<gt>
 
 =head1 SEE ALSO
 
