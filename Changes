@@ -1,4 +1,7 @@
 Revision history for Perl extension Acme::W
 
+0.02    Thu Dec 09 00:00:00 2010
+        - modify file handler and open argument
+
 0.01    Tue Nov 30 14:11:36 2010
         - original version

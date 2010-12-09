@@ -2,7 +2,7 @@ package Acme::W;
 use strict;
 use warnings;
 use Filter::Simple;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 FILTER_ONLY code_no_comments => sub {
     s/([^\$\w\d])getprotobynumber([^\w\d])/$1WWWWWWw$2/g;
